@@ -1,0 +1,26 @@
+Instalar git
+sudo apt-get install git
+
+creamos un repositorio en github
+
+	1 git
+	2 clear
+	3 pwd
+	4 ls -l
+	5 git clone https://github.com/Dsaezfaus/ED.git
+	6 ls -l
+	7 cd ED
+	8 pwd
+	9 git status
+	10 gedit hola-mundo-git.txt
+	11 clear
+	12 git status
+	13 git add
+	14 git config --global user.name Dsaezfaus
+	15 git config --globar user.email dam.dsaez@institutoserpis.org
+	16 git commit -m "Hola mundo desde git"
+	17 git config --global push.default simple
+	18 git push
+	19
+	20
+	
