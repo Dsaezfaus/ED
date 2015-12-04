@@ -1,26 +1,49 @@
-Instalar git
+2015.11.09
+instalamos:
+ monodevelop
+ monodevelop-nunit
+ monodevelop-versioncontrol
+ monodoc-browser
+
+2015.09.28
+repasadas las fases de compilación
+·preprocesado
+ gcc -E holamundo.c > holamundo.preprocesado
+·compilación
+ gcc -S holamundo.c (-> holamundo.s ensamblador) 
+·ensamblado
+ gcc -c holamundo.c (-> holamundo.o código objeto)
+·enlazado
+ gcc -o holamundo.exe holamundo.c (-> código máquina)
+
+
+
+2015.09.23
+realizado holamundo.c
+visto proceso de compilación
+gcc ...
+
+
+hasta 2015.09.23
+
+instalar git
 sudo apt-get install git
 
 creamos un repositorio en github
+antes, si no eres usuario, debes crear uno
 
-	1 git
-	2 clear
-	3 pwd
-	4 ls -l
-	5 git clone https://github.com/Dsaezfaus/ED.git
-	6 ls -l
-	7 cd ED
-	8 pwd
-	9 git status
-	10 gedit hola-mundo-git.txt
-	11 clear
-	12 git status
-	13 git add
-	14 git config --global user.name Dsaezfaus
-	15 git config --globar user.email dam.dsaez@institutoserpis.org
-	16 git commit -m "Hola mundo desde git"
-	17 git config --global push.default simple
-	18 git push
-	19
-	20
-	
+clonamos el repositorio de github
+git clone https://github.com/luisvelasco15/ed.git
+
+gedit hola-mundo-git.txt
+
+git add .
+
+git config --global user.name luisvelasco15
+git config --global user.email luis.velasco@institutoserpis.org
+
+git commit -m "Hola mundo desde git"
+
+git config --global push.default simple
+git push
+
